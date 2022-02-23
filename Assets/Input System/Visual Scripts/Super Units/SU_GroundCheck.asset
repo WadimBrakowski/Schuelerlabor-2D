@@ -1,0 +1,17 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: SU_GroundCheck
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"collection":{"$content":[],"$version":"A"},"$version":"A"},"controlInputDefinitions":[{"key":"Enter","label":null,"summary":null,"hideLabel":true}],"controlOutputDefinitions":[{"key":"Exit","label":null,"summary":null,"hideLabel":true}],"valueInputDefinitions":[{"hasDefaultValue":false,"defaultValue":null,"_type":"UnityEngine.Collider2D","key":"Collider","label":null,"summary":null,"hideLabel":false},{"hasDefaultValue":false,"defaultValue":null,"_type":"UnityEngine.LayerMask","key":"Ground","label":null,"summary":null,"hideLabel":false}],"valueOutputDefinitions":[],"title":"SU_GroundCheck","summary":null,"pan":{"x":202.0,"y":9.0},"zoom":1.0,"elements":[{"defaultValues":{},"position":{"x":270.0,"y":-153.0},"guid":"775828de-40e6-420a-8409-b65f62f33a58","$version":"A","$type":"Unity.VisualScripting.GraphOutput","$id":"13"},{"defaultValues":{},"position":{"x":-394.0,"y":-114.0},"guid":"ea461e5a-2db8-4eb4-a004-2aebbb1c8aa4","$version":"A","$type":"Unity.VisualScripting.GraphInput","$id":"15"},{"defaultValues":{},"position":{"x":71.0,"y":-132.0},"guid":"6b26c463-409a-4d2c-8fc6-1e675bab742c","$version":"A","$type":"Unity.VisualScripting.If","$id":"17"},{"chainable":false,"member":{"name":"IsTouchingLayers","parameterTypes":["System.Int32"],"targetType":"UnityEngine.BoxCollider2D","targetTypeName":"UnityEngine.BoxCollider2D","$version":"A"},"defaultValues":{"target":null,"%layerMask":{"$content":0,"$type":"System.Int32"}},"position":{"x":-183.0,"y":-117.0},"guid":"78253f21-8c96-4a7b-a432-7aab8add3d12","$version":"A","$type":"Unity.VisualScripting.InvokeMember","$id":"19"},{"sourceUnit":{"$ref":"17"},"sourceKey":"ifTrue","destinationUnit":{"$ref":"13"},"destinationKey":"Exit","guid":"27659fd5-eabb-42fa-9fa7-2ba1ea2ea342","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"Enter","destinationUnit":{"$ref":"19"},"destinationKey":"enter","guid":"78014e57-7850-482b-ab5c-3e2f21783bc4","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"exit","destinationUnit":{"$ref":"17"},"destinationKey":"enter","guid":"ac772667-84e7-42d0-9597-fd4c0b731f2c","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"15"},"sourceKey":"Ground","destinationUnit":{"$ref":"19"},"destinationKey":"%layerMask","guid":"974171f3-0ea3-4e51-9ae8-c746a7df3249","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"19"},"sourceKey":"result","destinationUnit":{"$ref":"17"},"destinationKey":"condition","guid":"3fa53e59-17ec-4a37-b3aa-2be963e44b1d","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
