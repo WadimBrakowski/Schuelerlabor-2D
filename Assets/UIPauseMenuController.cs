@@ -10,6 +10,7 @@ public class UIPauseMenuController : MonoBehaviour
     public Button resumeButton;
     public Button exitButton;
     public VisualElement pauseMenu;
+    public VisualElement gameOver;
 
     bool isPaused = false;
     // Start is called before the first frame update
@@ -20,6 +21,7 @@ public class UIPauseMenuController : MonoBehaviour
         resumeButton = root.Q<Button>("resume-button");
         exitButton = root.Q<Button>("exit-button");
         pauseMenu = root.Q<VisualElement>("pause-menu");
+        gameOver = root.Q<VisualElement>("game-over");
 
         resumeButton.clicked += Resume;
         exitButton.clicked += Exit;
@@ -53,6 +55,8 @@ public class UIPauseMenuController : MonoBehaviour
             pauseMenu.style.display = DisplayStyle.None;
             isPaused = false;
         }
+
+
 
 
     }
