@@ -258,7 +258,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 519420028}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -16.720774, y: 2.93171, z: -10}
+  m_LocalPosition: {x: -16.71361, y: 2.9317, z: -10}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -9298,7 +9298,7 @@ GameObject:
   - component: {fileID: 1597959552}
   - component: {fileID: 1597959551}
   m_Layer: 6
-  m_Name: Platfom Kacheln
+  m_Name: Plattfom Kacheln
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12848,7 +12848,7 @@ MonoBehaviour:
     ModeOverride: 0
     LensShift: {x: 0, y: 0}
     GateFit: 2
-    m_SensorSize: {x: 1.3333334, y: 1}
+    m_SensorSize: {x: 1.7781202, y: 1}
   m_Transitions:
     m_BlendHint: 0
     m_InheritPosition: 0
