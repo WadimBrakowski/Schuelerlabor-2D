@@ -49,11 +49,13 @@ public class UIPauseMenuController : MonoBehaviour
         {
             pauseMenu.style.display = DisplayStyle.Flex;
             isPaused = true;
+            Time.timeScale = 0;
         }
         else if (Input.GetKeyDown(KeyCode.Escape) && isPaused == true)
         {
             pauseMenu.style.display = DisplayStyle.None;
             isPaused = false;
+            Time.timeScale = 1;
         }
 
 

@@ -28,6 +28,6 @@ public class UIController : MonoBehaviour
 
     private void StartButtonPressed()
     {
-        SceneManager.LoadScene("1. Stage");
+        SceneManager.LoadScene("1. Level");
     }
 }
