@@ -1,0 +1,18 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 95e66c6366d904e98bc83428217d4fd7, type: 3}
+  m_Name: Workshop
+  m_EditorClassIdentifier: 
+  _data:
+    _json: '{"graph":{"variables":{"Kind":"Flow","collection":{"$content":[{"name":"Geschwindigkeit","value":{"x":5.0,"y":0.0,"$type":"UnityEngine.Vector2"},"typeHandle":{"Identification":"UnityEngine.Vector2,
+      UnityEngine.CoreModule, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null","$version":"A"},"$version":"A"}],"$version":"A"},"$version":"A"},"controlInputDefinitions":[],"controlOutputDefinitions":[],"valueInputDefinitions":[],"valueOutputDefinitions":[],"title":null,"summary":null,"pan":{"x":67.0,"y":334.7795},"zoom":1.0,"elements":[{"coroutine":false,"defaultValues":{},"position":{"x":-204.0,"y":-144.0},"guid":"1d85306c-598d-4385-92cf-b483428f6252","$version":"A","$type":"Unity.VisualScripting.Start"},{"coroutine":false,"defaultValues":{},"position":{"x":-212.0,"y":97.0},"guid":"31c9da39-2c9e-40bb-98b6-d83f71486e56","$version":"A","$type":"Unity.VisualScripting.Update","$id":"12"},{"FloatValue":null,"Vector2Value":{"unit":{"$ref":"14"}},"InputActionChangeType":"OnHold","coroutine":false,"defaultValues":{"Target":null,"InputAction":{"id":"ed127b56-4149-4fdf-9a17-d6d9d1429a06","name":"Move","expectedControlType":"Vector2","type":"Value","$type":"UnityEngine.InputSystem.InputAction"}},"position":{"x":-343.0,"y":223.0},"guid":"30a5077a-79b9-42c5-9c89-f0179ba6a7c5","$version":"A","$type":"Unity.VisualScripting.InputSystem.OnInputSystemEventVector2","$id":"14"},{"chainable":false,"member":{"name":"velocity","parameterTypes":null,"targetType":"UnityEngine.Rigidbody2D","targetTypeName":"UnityEngine.Rigidbody2D","$version":"A"},"defaultValues":{"target":null,"input":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"}},"position":{"x":226.0,"y":215.0},"guid":"6a5eef19-9270-42e7-a72d-4d0f77fbc87a","$version":"A","$type":"Unity.VisualScripting.SetMember","$id":"18"},{"specifyFallback":false,"kind":"Graph","defaultValues":{"name":{"$content":"Geschwindigkeit","$type":"System.String"}},"position":{"x":-290.0,"y":372.0},"guid":"374382c7-cf40-4e85-a2c7-9311f8f16a3e","$version":"A","$type":"Unity.VisualScripting.GetVariable","$id":"21"},{"defaultValues":{"b":{"x":0.0,"y":0.0,"$type":"UnityEngine.Vector2"}},"position":{"x":18.0,"y":341.0},"guid":"f52a0a1b-a21e-4a37-81ce-66f8544b5563","$version":"A","$type":"Unity.VisualScripting.Vector2Multiply","$id":"23"},{"sourceUnit":{"$ref":"12"},"sourceKey":"trigger","destinationUnit":{"$ref":"18"},"destinationKey":"assign","guid":"f07ffaac-1624-4af6-8496-841d6343ff23","$type":"Unity.VisualScripting.ControlConnection"},{"sourceUnit":{"$ref":"14"},"sourceKey":"Vector2Value","destinationUnit":{"$ref":"23"},"destinationKey":"a","guid":"da9a05ed-8ea0-4df5-888f-5e2ada35a24b","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"21"},"sourceKey":"value","destinationUnit":{"$ref":"23"},"destinationKey":"b","guid":"43b17d60-c8da-4e7f-bf7d-81dd3372454a","$type":"Unity.VisualScripting.ValueConnection"},{"sourceUnit":{"$ref":"23"},"sourceKey":"product","destinationUnit":{"$ref":"18"},"destinationKey":"input","guid":"e90ff1ac-2c72-4eff-a32d-05d83fa01451","$type":"Unity.VisualScripting.ValueConnection"}],"$version":"A"}}'
+    _objectReferences: []
