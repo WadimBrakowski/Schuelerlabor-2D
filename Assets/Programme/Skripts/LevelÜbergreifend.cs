@@ -16,7 +16,8 @@ public class LevelÜbergreifend : MonoBehaviour
             DontDestroyOnLoad(gameObject);
         }
     }
-
+    
+    
     public void ResetLevelÜbergreifend()
     {
         Destroy(gameObject);

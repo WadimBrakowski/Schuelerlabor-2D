@@ -6,6 +6,7 @@ public class Pickup : MonoBehaviour
 {
     //Animator animator;
     SpielSitzung ps;
+    //Definiert die Punkte für den Apfel
     [SerializeField] int pointsForPickup = 100;
 
     bool wasCollected = false;
@@ -14,8 +15,10 @@ public class Pickup : MonoBehaviour
         //animator=GetComponent<Animator>();
         ps = FindObjectOfType<SpielSitzung>();
     }
+    //Funktion, wenn Trigger ausgelöst wird.
     private void OnTriggerEnter2D(Collider2D collision)
     {
+        //Sammelt Apfel ein
         if(collision.tag=="Player"&&!wasCollected)
         {
             wasCollected = true;

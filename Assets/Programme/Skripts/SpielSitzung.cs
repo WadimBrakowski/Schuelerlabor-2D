@@ -27,10 +27,12 @@ public class SpielSitzung : MonoBehaviour
 
     private void Start()
     {
+        //Übergibt die Anzahl der Leben und Punkte an die UI Elemente
         livesText.text = playerLives.ToString();
         scoreText.text = score.ToString();
     }
 
+    //Diese Funktion beendet das Spiel sobald der Spieler alle Leben verliert
     public void ProcessPlayerDeath()
     {
         if(playerLives>1)
@@ -49,17 +51,22 @@ public class SpielSitzung : MonoBehaviour
         scoreText.text = score.ToString();
     }
 
+    //Funktion um Leben abzuziehen
     private void TakeLife()
     {
+        //Zieht ein Leben ab
         playerLives--;
+        //Aktuelles Level wird neu geladen
         int currentSceneIndex = SceneManager.GetActiveScene().buildIndex;
         SceneManager.LoadScene(currentSceneIndex);
         livesText.text = playerLives.ToString();
     }
 
+    //Setzt das Spiel zurück
     private void ResetGameSession()
     {
         FindObjectOfType<LevelÜbergreifend>().ResetLevelÜbergreifend();
+        //Lädt das Level mit dem Index 0, also das Hauptmenü
         SceneManager.LoadScene(0);
         Destroy(gameObject);
     }
